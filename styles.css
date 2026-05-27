@@ -2,23 +2,22 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Poppins;
+    font-family: Outfit;
 }
 body{
-    background-color: #B0E4CC;
+    background-color: #C9B59C;
 }
-form {
-    max-width: 700px;
-    min-width: 400px;
-    background-color: #285A48;
+.container {
+    width: 80%;
+    max-width: 600px;
+    background-color: #D9CFC7;
     margin: 20px auto;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px #091413
+    box-shadow: 0 5px 10px #46311771
 ;
 }
 h1{
-    color: #B0E4CC;
     font-size: 3rem;
     text-align: center;
 }
@@ -26,6 +25,18 @@ p{
     font-size: 1rem;
     font-style: italic;
     text-align: center;
+    line-height: 1.6;
+    margin: 20px 0;
+    
+}
+label:not(.types){
+  display: block;
+  margin: 10px 0;
+  
+}
+input:not(.radio-group input), textarea{
+  width: 100%;
+  height: 2rem;
 }
 
 input:focus, textarea:focus{
