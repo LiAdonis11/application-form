@@ -18,15 +18,19 @@
 
         <form>
             
-            <label for="name">Full Name: </label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email">
-            <label>Profiles: </label>
-            <input type="url">
+            <label for="name" class="form-group">Full Name:
+                <input type="text" id="name" name="name" placeholder="e.g., John Doe" required>
+            </label>
 
-            <label for="position">Position:</label>
-            <select id="position">
+            <label for="email" class="form-group">Email: 
+                <input type="email" id="email" name="email" placeholder="e.g., johndoe@gmail.com" required>
+            </label>
+            <label for="profile" class="form-group">Profiles: 
+                <input type="url" id="profile" name="profile" placeholder="e.g., https://github.com/johndoe" required>
+            </label>
+
+            <label for="position" class="position">Position:
+            <select id="position" >
                 <option value="role" selected>Choose Role</option>
                 <option value="aiml">AI / Machine Learning Engineer</option>
                 <option value="cloud">Cloud Architect / Engineer</option>
@@ -34,6 +38,7 @@
                 <option value="data">Data Scientist / Data Engineer</option>
                 <option value="fullstack">Full-Stack Developer (with AI Specialization)</option>
             </select>
+            </label>
 
             <fieldset class="radio-group">
                 <legend>Employment Types</legend>
@@ -43,10 +48,10 @@
                 <label for="part-time" class="types">Part-Time</label>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="message">
                 <legend>Message Us</legend>
                 <label for="message"></label>
-                <textarea id="message"></textarea>
+                <textarea id="message" cols="50" rows="50" placeholder="Type your message to us here..."></textarea>
             </fieldset>
             <button type="submit">Submit</button>
         </form>
